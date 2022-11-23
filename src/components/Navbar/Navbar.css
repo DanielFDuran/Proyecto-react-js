@@ -1,8 +1,21 @@
-.boton {
-  color: blue;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
+}
+
+.header {
+  background-color: #88c9db;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.title {
+  padding-left: 20px;
 }
