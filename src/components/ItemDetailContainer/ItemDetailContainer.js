@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
     }, [productId])
 
     const handleOnAdd =(quantity)=>{
-        console.log('Agregado' + quantity)
+        console.log('Agregado ' + quantity)
     }
         
     return (
@@ -31,7 +31,7 @@ const ItemDetailContainer = () => {
                 <img src={product.img} alt={product.name} style={{ width:250}} />
                 <p>{product.description}</p>
                 <h3>${product.price}</h3>
-                <ItemCount stock={product.stock} onAdd ={handleOnAdd}/>
+                <ItemCount stock={product.stock} onAdd={handleOnAdd}/>
             </div>        
         
         </div>
