@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom'
 import './Navbar.css'
-import Button from '../Button/Button'
+//import Button from '../Button/Button'
 import CartWidget from '../CartWidget/CartWidget'
 
 const Navbar = (props) => {
@@ -9,10 +10,9 @@ const Navbar = (props) => {
             <img src="./image/computer.svg" alt="logocomp" width="30" className="logo"></img>
             <h1 style={{ color: props.colorTitle }} className="title">Visual Comp</h1>
         </nav>
-        <Button colorText ='blue'className="btn">Inicio</Button>
-        <Button colorText ='green'className="btn">Perifericos</Button>
-        <Button colorText ='red'className="btn">Contacto</Button>
-        
+        <Link to='/'>Home</Link>
+        <Link to='/category/Perifericos'>Perifericos</Link>
+        <Link to='/category/Insumos'>Insumos</Link>
         <CartWidget />
         </header>
     )
